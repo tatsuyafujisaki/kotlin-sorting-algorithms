@@ -1,5 +1,5 @@
 # Sorting algorithms
-Name|Best-case time complexity|Average time complexity|Worst-case time complexity|Worst-case space complexity|Stable?
+Name|Best-case time complexity|Average time complexity|Worst-case time complexity|Space complexity|Stable?
 --|--|--|--|--|--
 [Quicksort](https://en.wikipedia.org/wiki/Quicksort)|O(n log n)|O(n log n)|O(n^2)|O(log n)|No
 [Merge sort](https://en.wikipedia.org/wiki/Mergesort)|O(n log n)|O(n log n)|O(n log n)|O(n)|Yes
