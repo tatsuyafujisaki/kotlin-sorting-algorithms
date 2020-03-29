@@ -30,7 +30,7 @@ Name|Strengths|Weaknesses
 ---|---|---
 Quicksort|* Fastest in practice<br>* Parallelizable because it is a divide-and-conquer algorithm|* Slow worst-case<br>* Not stable
 Merge sort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm<br>* Stable|Space inefficient
-Heapsort|* The worst-case time complexity is only O(n log n).<br> * Space efficient|* Slow in practice<br>* Not stable
+Heapsort|* The worst-case time complexity is better than quicksort<br> * Space efficient|* Slow in practice<br>* Not stable
 
 # Note
 * The space complexity O(1) means in-place sorting.
