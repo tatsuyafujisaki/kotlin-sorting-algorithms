@@ -29,8 +29,8 @@ When a pivot is chosen, it is always the smallest or largest element. In the cas
 Name|Strengths|Weaknesses
 ---|---|---
 Quicksort|* Fastest in practice<br>* Parallelizable because it is a divide-and-conquer algorithm|* Slow worst-case<br>* Not stable
-Merge sort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm<br>* Stable|Space inefficient
-Heapsort|* Fast worst-case time complexity<br> * Space efficient|* Slow in practice<br>* Not stable
+Merge sort|* Fast worst-case<br>* Parallelizable because it is a divide-and-conquer algorithm<br>* Stable|Space inefficient
+Heapsort|* Fast worst-case<br> * Space efficient|* Slow in practice<br>* Not stable
 
 # Note
 * The space complexity O(1) means in-place sorting.
