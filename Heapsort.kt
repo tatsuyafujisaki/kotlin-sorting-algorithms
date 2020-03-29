@@ -5,7 +5,7 @@ object Heapsort {
             heapify(xs, xs.size, i)
         }
 
-        for (lastIndex in xs.indices.last downTo 0) {
+        for (lastIndex in xs.lastIndex downTo 0) {
             // Move the largest node, which is at the first element of the array, to the end of the array.
             swap(xs, 0, lastIndex)
 

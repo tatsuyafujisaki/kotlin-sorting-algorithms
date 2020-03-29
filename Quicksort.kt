@@ -1,6 +1,6 @@
 object Quicksort {
     fun sort(xs: IntArray) {
-        sort(xs, 0, xs.indices.last)
+        sort(xs, 0, xs.lastIndex)
     }
 
     private fun sort(xs: IntArray, low: Int, high: Int) {
