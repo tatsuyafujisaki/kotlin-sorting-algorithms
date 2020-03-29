@@ -10,7 +10,10 @@ Name|Best-case time complexity|Average time complexity|Worst-case time complexit
 
 # Quicksort
 ## Why is the average time complexity `n log n`?
-Because the time complexity for each level of the tree is `n`, and on a separate note, `n ≈ 2^height`. In conclusion, the total time complexity is `n * height` ≈ `n * log n`.
+* Because ...
+  * the time complexity for each level of the tree is `n`.
+  * `n ≤ 2^h - 1`, hence `log n ≈ h`.
+  * In conclusion, the total time complexity is `n * height` ≈ `n * log n`.
 
 https://www.hackerrank.com/challenges/quicksort4/problem
 
