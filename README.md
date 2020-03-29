@@ -36,3 +36,4 @@ Heapsort|* The worst-case time complexity is only O(n log n).<br> * Space effici
 * The space complexity O(1) means in-place sorting.
 * Stable sorting algorithms maintain the relative order of records with equal values.
 * n and 2n are both O(n).
+* Quicksort and heapsort are single words but merge sort is not.
