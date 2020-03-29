@@ -2,7 +2,7 @@
 Name|Best-case time complexity|Average time complexity|Worst-case time complexity|Space complexity|Stable?
 --|--|--|--|--|--
 [Quicksort](https://en.wikipedia.org/wiki/Quicksort)|O(n log n)|O(n log n)|O(n^2)|O(log n)|No
-[Merge sort](https://en.wikipedia.org/wiki/Mergesort)|O(n log n)|O(n log n)|O(n log n)|O(n)|No
+[Merge sort](https://en.wikipedia.org/wiki/Mergesort)|O(n log n)|O(n log n)|O(n log n)|O(n)|Yes
 [Heapsort](https://en.wikipedia.org/wiki/Heapsort)|O(n log n)|O(n log n)|O(n log n)|O(1)|No
 [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)|O(n) comparisons, O(1) swaps|O(n^2) comparisons and swaps|O(n^2) comparisons and swaps|O(1)|Yes
 [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)|O(n) comparisons, O(1) swaps|O(n^2) comparisons and swaps|O(n^2) comparisons and swaps|O(1)|Yes
@@ -10,12 +10,12 @@ Name|Best-case time complexity|Average time complexity|Worst-case time complexit
 
 # Quicksort
 ## Why is the average time complexity `n log n`?
-Because the time complexity for each level of height is `n`, and `n ≈ 2^height`. In conclusion, the total time complexity is `n * height` ≈ `n * log n`.
+Because the time complexity for each level of the tree is `n`, and on a separate note, `n ≈ 2^height`. In conclusion, the total time complexity is `n * height` ≈ `n * log n`.
 
 https://www.hackerrank.com/challenges/quicksort4/problem
 
 ## What is the worst-case scenario?
-When a pivot is chosen, it is alwasy the smallest or largest element. In the case, the height of the tree is `n` rather than `log n`, and the time complexity becomes `n * height` ≈ `n * n`.
+When a pivot is chosen, it is always the smallest or largest element. In the case, the height of the tree is `n` rather than `log n`, and the time complexity becomes `n * height` ≈ `n * n`.
 
 ## How to avoid the worst-case scenario?
 * Randomly choose a pivot.
@@ -26,9 +26,9 @@ Quicksort and heapsort are single words but merge sort is not.
 
 Name|Strengths|Weaknesses
 ---|---|---
-Quicksort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm|Slow worst-case
-Merge sort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm|Space inefficient
-Heapsort|* The worst-case time complexity is only O(n log n).<br> * Space efficient|Slow in practice
+Quicksort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm|* Slow worst-case<br>* Not stable
+Merge sort|* Fast<br>* Parallelizable because it is a divide-and-conquer algorithm<br>* Stable|Space inefficient
+Heapsort|* The worst-case time complexity is only O(n log n).<br> * Space efficient|* Slow in practice<br>* Not stable
 
 # Note
 * The space complexity O(1) means in-place sorting.
