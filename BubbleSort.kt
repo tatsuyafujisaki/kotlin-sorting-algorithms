@@ -4,7 +4,7 @@ object BubbleSort {
         while (1 < n) {
             var lastSwappedIndex = 0
             for (i in 0..(n - 2)) {
-                if (xs[i + 1] < xs[i]) {
+                if (xs[i] > xs[i + 1]) {
                     xs.swap(i, i + 1)
                     lastSwappedIndex = i + 1
                 }
