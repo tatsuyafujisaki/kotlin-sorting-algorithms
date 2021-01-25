@@ -26,7 +26,7 @@ When a pivot is chosen, it is always the smallest or largest element. In the cas
 * Randomly choose a pivot.
 * Choose the median as a pivot.
 
-# Quicksort vs. Merge sort vs. Heapsort
+# Quicksort versus Merge sort versus Heapsort
 Name|Strengths|Weaknesses
 ---|---|---
 Quicksort|* Fastest in practice<br>* Parallelizable because it is a divide-and-conquer algorithm|* Slow worst-case<br>* Not stable
