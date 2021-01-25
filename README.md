@@ -8,7 +8,7 @@ Name|Best-case time complexity|Average time complexity|Worst-case time complexit
 [Merge sort](https://en.wikipedia.org/wiki/Mergesort)|O(n log n)|O(n log n)|O(n log n)|O(n)|Yes
 [Quicksort](https://en.wikipedia.org/wiki/Quicksort)|O(n log n)|O(n log n)|O(n^2)|O(log n)|No
 [Radix sort](https://en.wikipedia.org/wiki/Radix_sort)|O(k*n)|O(k*n)|O(k*n)|O(k+n)|Yes
-[Selection sort](https://en.wikipedia.org/wiki/Selection_sort)|O(n^2) comparisons, O(n) swaps|O(n^2) comparisons and swaps|O(n^2) comparisons and swaps|O(1)|No
+[Selection sort](https://en.wikipedia.org/wiki/Selection_sort)|O(n^2) comparisons, O(1) swaps|O(n^2) comparisons, O(n) swaps|O(n^2) comparisons, O(n) swaps|O(1)|No
 
 # Quicksort
 ## Why is the average time complexity `n log n`?
