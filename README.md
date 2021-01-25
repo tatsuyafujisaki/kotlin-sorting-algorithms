@@ -2,7 +2,7 @@
 Name|Best-case time complexity|Average time complexity|Worst-case time complexity|Space complexity|Stable?
 --|--|--|--|--|--
 [Bubble sort](https://en.wikipedia.org/wiki/Bubble_sort)|O(n) comparisons, O(1) swaps|O(n^2) comparisons and swaps|O(n^2) comparisons and swaps|O(1)|Yes
-[Counting sort](https://en.wikipedia.org/wiki/Counting_sort)|-|O(n+k)|O(n+k)|Yes
+[Counting sort](https://en.wikipedia.org/wiki/Counting_sort)|-|O(n+k)|O(n+k)|O(n+k)|Yes
 [Heapsort](https://en.wikipedia.org/wiki/Heapsort)|O(n log n)|O(n log n)|O(n log n)|O(1)|No
 [Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)|O(n) comparisons, O(1) swaps|O(n^2) comparisons and swaps|O(n^2) comparisons and swaps|O(1)|Yes
 [Merge sort](https://en.wikipedia.org/wiki/Mergesort)|O(n log n)|O(n log n)|O(n log n)|O(n)|Yes
