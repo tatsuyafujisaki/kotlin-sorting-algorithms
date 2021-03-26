@@ -1,6 +1,6 @@
 object CountingSort {
-    fun sort(xs: IntArray) {
-        val counts = IntArray(xs.maxOrNull()!! + 1)
+    fun sort(xs: IntArray, max: Int = xs.maxOrNull()!!) {
+        val counts = IntArray(max + 1)
         for (x in xs) {
             counts[x]++
         }
