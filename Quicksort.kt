@@ -16,15 +16,9 @@ object Quicksort {
         var j = high
         val pivot = xs[(i + j) / 2]
         while (true) {
-            while (xs[i] < pivot) {
-                i++
-            }
-            while (pivot < xs[j]) {
-                j--
-            }
-            if (j < i) {
-                break
-            }
+            while (xs[i] < pivot) i++
+            while (pivot < xs[j]) j--
+            if (j < i) break
             xs.swap(i++, j--)
         }
         return i

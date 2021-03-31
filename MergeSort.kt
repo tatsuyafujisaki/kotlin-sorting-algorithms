@@ -1,8 +1,6 @@
 object MergeSort {
     fun sort(xs: IntArray): IntArray {
-        if (xs.size < 2) {
-            return xs
-        }
+        if (xs.size < 2) return xs
         val middle = xs.size / 2
         return merge(sort(xs.copyOfRange(0, middle)), sort(xs.copyOfRange(middle, xs.size)))
     }
