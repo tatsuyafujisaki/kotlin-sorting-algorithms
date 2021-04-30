@@ -13,14 +13,16 @@ Name|Best-case time complexity|Average time complexity|Worst-case time complexit
 # Quicksort
 ## Why is the average time complexity `n log n`?
 * Because ...
-  * the time complexity for each level of the tree is `n`.
-  * `n ≤ 2^h - 1`, hence `log n ≈ h`.
-  * In conclusion, the total time complexity is `n * height` ≈ `n * log n`.
+  * Each partitioning is O(n) because you have to visit every element.
+  * Partitioning is repeated for the height of the tree.
+  * Hence, the time complexity is `n * height`.
 
-https://www.hackerrank.com/challenges/quicksort4/problem
+### Height of tree
+#### Ideal case
+You choose a pivot that partitions the input in half. In the case, the height of the tree is `log(n)` because `n ≤ 2^h - 1`.
 
-## What is the worst-case scenario?
-When a pivot is chosen, it is always the smallest or largest element. In the case, the height of the tree is `n` rather than `log n`, and the time complexity becomes `n * height` ≈ `n * n`.
+#### Worst case
+You choose a pivot that is the smallest or largest element. In the case, the height of the tree is `n`.
 
 ## How to avoid the worst-case scenario?
 * Randomly choose a pivot.
