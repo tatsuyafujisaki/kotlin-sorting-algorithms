@@ -12,16 +12,16 @@ Name|Best-case time complexity|Average time complexity|Worst-case time complexit
 
 # Quicksort
 ## Why is the average time complexity `n log n`?
-* Because ...
-  * Each partitioning is O(n) because you have to visit every element.
-  * Partitioning is repeated for the height of the tree.
-  * Hence, the time complexity is `n * height`.
+Because ...
+* Each partitioning is O(n) because you have to visit every element.
+* Partitioning is repeated for the height of the tree.
+* Hence, the time complexity is `n * height`.
 
-### Height of tree
-#### Ideal case
+#### Height of tree
+##### Ideal case
 You choose a pivot that partitions the input in half. In the case, the height of the tree is `log(n)` because `n ≤ 2^h - 1`.
 
-#### Worst case
+##### Worst case
 You choose a pivot that is the smallest or largest element. In the case, the height of the tree is `n`.
 
 ## How to avoid the worst-case scenario?
