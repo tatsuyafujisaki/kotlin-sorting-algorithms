@@ -3,10 +3,10 @@ object BubbleSort {
         var n = xs.size
         while (1 < n) {
             var lastSwappedIndex = 0
-            for (i in 0 until n - 1) {
-                if (xs[i] > xs[i + 1]) {
-                    xs.swap(i, i + 1)
-                    lastSwappedIndex = i + 1
+            repeat(n - 1) {
+                if (xs[it] > xs[it + 1]) {
+                    xs.swap(it, it + 1)
+                    lastSwappedIndex = it + 1
                 }
             }
             n = lastSwappedIndex
